@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main{
+    
+}
+.header{
+    width: 100%;
+    height: 56px;
+    background-color: rgba(0, 0, 0, 0.95);
+    display: flex;
+    justify-content: space-between;
+}
+#logo{
+    padding: 0 10px;
+    color: rgb(255, 255, 255); 
+    line-height: 56px; 
+    font-size: larger; 
+    text-transform: uppercase;
+
+}
+.nav{
+
+}
+.nav li{
+    display: inline-block;
+}
+.nav li a {
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: capitalize;
+    text-decoration: none;
+    line-height: 56px;
+    padding: 0 24px;
+    --border-radius: 48px;
+}
+.nav li:hover a{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: inline-block;
+}
+#main .container{
+    min-height: 90vh;
+    height: fit-content;
+    background-image:linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(https://static.vecteezy.com/system/resources/previews/006/188/153/non_2x/seamless-pattern-doodle-many-icons-of-books-scattered-background-for-education-elearning-school-concept-pile-of-paper-books-open-book-book-on-computer-screen-ebooks-glasses-heart-vector.jpg);
+    background-repeat: repeat;
+    background-size: 75%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sidebar{
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(150, 150, 150, 0.8);
+    padding: 24px 12px;
+    margin: 96px 0px;
+    display: flex;
+    flex-direction: column;
+    border: #333 1px solid;
+}
+
+.sidebar__item {
+    line-height: 32px;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 0px 4px;
+    margin: 4px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 3px 5px rgb(0, 0, 0, 0.8);
+    
+}
+.sidebar__item:hover{
+    background-color: #333;
+    color: white;
+    display: inline-block;
+}
+
+.bookconteiner{
+    margin: 20px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content{
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(158, 194, 166, 0.9);
+    border-radius: 10px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+}
+.content:hover {
+    scale: 1.15;
+}
+
+#footer{
+    background-color: #333;
+    height: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centerbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.centerbox_item{
+    padding: 20px;
+    border: #333 solid;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.inputbox{
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    width: fit-content;
+}
+.inputbox_item{
+    width: 20vh;
+}
+
+.editbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 10px;
+}
+
+.bg1{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgb(255,255,255,0.5), rgb(255,255,255,0.5)), url(https://static.vecteezy.com/system/resources/previews/005/665/541/original/a-set-of-school-items-in-a-simple-doodle-style-line-illustration-isolated-on-background-vector.jpg);
+    background-repeat: repeat;
+    background-size: 50%;
+    height: 100vh;
+}
+
+.bg2{
+    height: 100vh;
+    background-image: linear-gradient(rgb(255,255,255,0.7), rgb(255,255,255,0.7)), url(https://thumbs.dreamstime.com/b/seamless-illustration-theme-vegetarianism-grocery-icons-simple-outline-black-icons-white-background-pattern-88807401.jpg);
+}
+
+#textfield{
+    width: 50vh;
+    height: 30vh;
+    vertical-align: top;
+}
+
+#picture{
+    width: 336.2px;
+    height: 336.2px;
+    border: #333 dashed 1px;
+    background-size: cover;
+}
+
+#preview {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+#preview2{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.table{
+    background-color: rgba(201, 201, 201, 0.8);
+}
+
+#userview{
+    width: 80vw;
+    min-height: 80vh;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255);
+}
+#userview_box{
+    display: flex;
+}
+#userview_picture{
+    width: fit-content;
+    height: 50vh;
+    border: #333 solid 1px;
+    margin-left: 30px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+#userview_picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#userview_info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#userview_comment{
+    margin-top: 40px;
+    width: 100%;
+    min-height: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#comment{
+    background-color: white;
+    width: 80%;
+    min-height: 80px;
+    height: fit-content;
+    border: #333 solid 1px;
+}
